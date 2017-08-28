@@ -1,0 +1,1 @@
+# kidzmaster-adaptive
