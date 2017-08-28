@@ -1,0 +1,23 @@
+.container {
+  width: 87.5%; //(280px/320px)*100%
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 88.571428571%; //(620px/700px)*100%
+  }
+
+  @media @desktop-widths {
+    width: 97.916666666%;//(940px/960px)*100%
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
