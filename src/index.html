@@ -13,12 +13,15 @@
 <body>
   <header class="page-header">
     <div class="page-header__container">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo">
           <a href="index.html" class="main-nav__link main-nav__link--home">
-            <img src="img/main-nav__logo.svg" alt="KidzMaster" class="main-nav__logotype" width="" height="">
+            <picture>
+              <img class="main-nav__logotype" src="img/main-nav__logo.png" srcset="img/main-nav__logo@2x.png 2x" alt="KidzMaster" title="KidzMaster" width="271" height="140">
+            </picture>
           </a>
         </div>
+        <button class="main-nav__toggler">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__info">
             <li class="main-nav__item">
@@ -387,5 +390,6 @@
       </section>
     </div>
   </footer>
+  <script src="js/toggler.js"></script>
 </body>
 </html>
