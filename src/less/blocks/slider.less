@@ -1,18 +1,103 @@
 .slider {
   position: relative;
+  padding-top: 40px;
+  padding-bottom: 168px;
+  color: @color--lightblue;
+  background-image: url("../img/header-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 23%;
+  background-position: 100% 100%;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    top: -22px;
-    background-image: url(../img/clouds-bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  &__container {
+    .container();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  input {
+
+  &__heading {
+    margin: 0;
+    font-size: @font-size--normal;
+    line-height: @line-height--tiny;
+    font-family: @dosis;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    font-family: @dosis;
+    font-weight: 500;
+  }
+
+  &__page {
+    display: none;
+    order: 1;
+  }
+
+  &__control {
     display: none;
   }
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 2;
+    width: 80px;
+    height: 10px;
+  }
+
+  &__label {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid @color--lightblue;
+    border-radius: 50%;
+    background-color: transparent;
+
+    &:hover {
+      background-color: @color--lightblue;
+    }
+  }
+
+  #slide-1:checked ~ &__controls &__label[for="slide-1"],
+  #slide-2:checked ~ &__controls &__label[for="slide-2"],
+  #slide-3:checked ~ &__controls &__label[for="slide-3"] {
+    background-color: @color--lightblue;
+  }
+
+  #slide-1:checked ~ &__page--first {
+    display: block;
+  }
+
+  #slide-2:checked ~ &__page--second {
+    display: block;
+  }
+
+  #slide-3:checked ~ &__page--third {
+    display: block;
+  }
+
+  &__images {
+   position: relative;
+  }
+
+  &__image {
+    overflow: hidden;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
 }
