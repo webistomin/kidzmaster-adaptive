@@ -1,11 +1,12 @@
 .main-nav {
   position: relative;
+  z-index: 10;
 
   &__logo {
     width: 160px;
     margin-left: 20px;
     padding-top: 18px;
-    padding-bottom: 18px;
+    padding-bottom: 60px;
     text-align: left;
   }
 
@@ -66,34 +67,31 @@
     transition: all 0.2s ease-in;
   }
 
-  &__wrapper {
+  &__container {
     position: absolute;
     width: 100%;
     background-color: @color--lightblue;
   }
 
-  &__list {
-    position: absolute;
-    width: 100%;
-    background-color: @color--lightblue;
-  }
-
-  &--closed &__wrapper,
-  &--closed &__list {
+  &--closed &__container {
     display: none;
   }
 
-  &--opened &__wrapper,
-  &--opened &__list {
-    display: block;
-  }
-
-  &--opened &__wrapper {
-    top: 707px;
+  &--opened &__container {
+    display: flex;
+    flex-direction: column;
   }
 
   &__info {
     display: none;
+  }
+
+  &__user-block {
+    order: 2;
+  }
+
+  &__list {
+    order: -1;
   }
 
   &__item {
