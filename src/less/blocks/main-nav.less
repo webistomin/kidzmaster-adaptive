@@ -117,6 +117,26 @@
     text-transform: uppercase;
     text-align: center;
 
+    &:hover {
+      color: rgba(255,255,255,0.6);
+    }
+
+    &:hover .main-nav__icon-login,
+    &:hover .main-nav__icon-reg,
+    &:hover .main-nav__icon-search {
+      opacity: 0.6;
+    }
+
+    &:active {
+      color: rgba(255,255,255,0.2);
+    }
+
+    &:active .main-nav__icon-login,
+    &:active .main-nav__icon-reg,
+    &:active .main-nav__icon-search {
+      opacity: 0.2;
+    }
+
     &--home {
       padding: 0;
     }
@@ -134,12 +154,6 @@
     position: absolute;
     left: 80px;
     top: 30px;
-  }
-
-  &__icon-search,
-  &__icon-reg,
-  &__icon-login {
     fill: #ffffff;
   }
-
 }
