@@ -1,0 +1,97 @@
+.courses {
+  margin-bottom: 20px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container();
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: @font-size--normal;
+    font-family: @dosis;
+    font-weight: 700;
+    color: @color--lightblue;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: @font-size--tiny;
+    line-height: @line-height--tiny;
+    font-weight: 600;
+    font-family: @roboto;
+    text-align: center;
+    color: @color--black;
+  }
+
+  &__list {
+    margin-top: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: @color--beige;
+    border-radius: 27px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    vertical-align: top;
+  }
+
+  &__number {
+    position: relative;
+    margin-top: 10px;
+    font-size: @font-size--tiny;
+    line-height: @line-height--tiny;
+    font-family: @roboto;
+    font-weight: 600;
+    color: @color--black;
+  }
+
+  &__icon-folder {
+    position: absolute;
+    top: 0;
+    left: -30px;
+  }
+
+  &__class {
+    margin: 0;
+    font-family: @robotoslab;
+    font-size: @font-size--normal;
+    line-height: @line-height--tiny;
+    color: @color--black;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    font-size: @font-size--tiny;
+    line-height: @line-height--tiny;
+    font-family: @roboto;
+    font-weight: 500;
+    color: @color--black;
+    opacity: 0.6;
+    text-align: center;
+  }
+
+  &__btn {
+    color: @color--lightblue;
+    background-color: transparent;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}
