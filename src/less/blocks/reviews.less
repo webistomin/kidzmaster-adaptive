@@ -1,3 +1,103 @@
 .reviews {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: @color--lightblue;
+  background-image: url(../img/house-bg.svg);
+  background-position: bottom;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container();
+  }
+
+  &__page {
+    position: relative;
+    display: none;
+    order: 1;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+
+    &::before {
+      position: absolute;
+      top: -12px;
+      content: "";
+      background-image: url("../img/quotes.svg");
+      background-repeat: no-repeat;
+      width: 280px;
+      height: 247px;
+    }
+  }
+
+  &__photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  &__control {
+    display: none;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 2;
+    width: 80px;
+    height: 10px;
+  }
+
+  &__label {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid @color--lightblue;
+    border-radius: 50%;
+    background-color: @color--white;
+
+    &:hover {
+      background-color: @color--black;
+    }
+  }
+
+  #reviews__slide1:checked ~ &__controls &__label[for="reviews__slide-1"],
+  #reviews__slide2:checked ~ &__controls &__label[for="reviews__slide-2"],
+  #reviews__slide3:checked ~ &__controls &__label[for="reviews__slide-3"] {
+    background-color: @color--black;
+  }
+
+  #reviews__slide1:checked ~ &__page--first {
+    display: flex;
+  }
+
+  #reviews__slide2:checked ~ &__page--second {
+    display: flex;
+  }
+
+  #reviews__slide3:checked ~ &__page--third {
+    display: flex;
+  }
+
+  &__author {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: @font-size--normal;
+    font-family: @dosis;
+    font-weight: 700;
+    color: @color--white;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: @dosis;
+    font-weight: 600;
+  }
 }
