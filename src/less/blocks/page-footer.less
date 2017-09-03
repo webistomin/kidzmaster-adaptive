@@ -1,6 +1,5 @@
 .page-footer {
   position: relative;
-  background-color: @color--grey;
   padding-top: 200px;
 
   &::before {
@@ -19,5 +18,153 @@
 
   &__container {
     .container();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  &__links {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    font-size: @font-size--small;
+    line-height: @line-height--tiny;
+    color: @color--lightblue;
+    text-transform: uppercase;
+    font-family: @roboto;
+    font-weight: 600;
+
+    &--center {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__input  {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid @color--lightblue;
+    color: @color--darkgrey;
+    outline: none;
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: 10px;
+    border: 0;
+    outline: none;
+  }
+
+  &__block {
+    margin-bottom: 40px;
+
+    &--bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    color: @color--darkgrey;
+    text-transform: uppercase;
+  }
+
+  &__sublink {
+    font-size: 0.9em;
+    color: @color--darkgrey;
+    font-weight: 500;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__quicklinks {
+    margin-bottom: 20px;
+  }
+
+  &__insta-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__insta-item {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 27px;
+    background-color: @color--lightblue;
+  }
+
+  &__copyright {
+    text-align: center;
+    color: @color--darkgrey;
+    margin-bottom: 10px;
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+  }
+
+  &__social-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__social-link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    &--fb {
+      background-image: url("../img/icon-facebook.svg");
+    }
+
+    &--tw {
+      background-image: url("../img/icon-twitter.svg");
+    }
+
+    &--google{
+      background-image: url("../img/icon-google.svg");
+    }
+
+    &--linkedin {
+      background-image: url("../img/icon-linkedin.svg");
+    }
+
+    &--yt {
+      background-image: url("../img/icon-youtube.svg");
+    }
+  }
+
+
 }
