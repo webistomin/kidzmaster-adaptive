@@ -175,3 +175,113 @@
   }
 }
 
+@media @desktop-widths {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 36px;
+
+    &__toggler {
+      display: none;
+    }
+
+    &--closed &__container {
+      display: block;
+      position: relative;
+    }
+
+    &__item {
+      border: none;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__user-block {
+      width: 250px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__info {
+      width: 320px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__list {
+      border-top: 1px solid rgba(255,255,255,0.5);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      margin-left: 0;
+      margin-right: 82px;
+      padding: 0;
+    }
+
+    &__link {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: @font-size--tiny;
+      line-height: @line-height--tiny;
+      font-weight: 500;
+
+      &--phone {
+        box-sizing: border-box;
+        width: 135px;
+        position: relative;
+        padding-left: 22px;
+        text-transform: none;
+      }
+
+      &--mail {
+        box-sizing: border-box;
+        width: 135px;
+        position: relative;
+        padding-left: 22px;
+        text-transform: none;
+      }
+
+      &--search {
+        text-transform: none;
+        color: transparent;
+      }
+
+      &--login {
+        text-transform: none;
+      }
+
+      &--reg {
+        text-transform: none;
+      }
+    }
+
+    &__icon-search,
+    &__icon-reg,
+    &__icon-login,
+    &__icon-mail,
+    &__icon-phone {
+      width: 16px;
+      height: 13px;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      fill: #ffffff;
+    }
+
+    &__icon-search,
+    &__icon-reg,
+    &__icon-login {
+      left: 54px;
+    }
+  }
+}
+

@@ -35,7 +35,9 @@
 
   &__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__item {
@@ -48,6 +50,7 @@
     background-color: @color--white;
     border-radius: 27px;
     margin-bottom: 10px;
+    margin-right: 10px;
     text-align: center;
   }
 
@@ -87,16 +90,6 @@
 
     &__text {
       font-size: @font-size--small;
-    }
-
-    &__list {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    &__item {
-      margin-right: 10px;
     }
   }
 }

@@ -16,8 +16,17 @@
   }
 }
 
-@media @tablet-widths {
+@media @desktop-widths{
   .page-header {
+    min-height: 345px;
 
+    &::before {
+      z-index: 11;
+      bottom: 0;
+    }
+
+    &__container {
+      .container();
+    }
   }
 }
