@@ -115,6 +115,7 @@
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
+    margin-right: 10px;
     border-radius: 27px;
     background-color: @color--lightblue;
   }
@@ -149,6 +150,28 @@
     position: absolute;
     bottom: -4px;
   }
+}
 
+@media @tablet-widths {
+  .page-footer {
 
+    &::before {
+      height: 200px;
+      background-position: 96% 67px,top right;
+      background-size: cover,30% 123%;
+    }
+
+    &__link {
+      font-size: @font-size--normal;
+      line-height: @line-height--tiny;
+    }
+
+    &__text {
+      font-size: @font-size--small;
+    }
+
+    &__copyright {
+      font-size: @font-size--small;
+    }
+  }
 }

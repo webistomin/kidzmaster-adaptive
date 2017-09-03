@@ -7,7 +7,6 @@
   }
 
   &__item {
-    .container();
     position: relative;
     display: flex;
     flex-direction: column;
@@ -71,5 +70,18 @@
     font-family: @roboto;
     color: @color--darkgrey;
     text-align: center;
+  }
+}
+
+@media @tablet-widths {
+  .info {
+    &__link {
+      font-size: @font-size--normal;
+      line-height: @line-height--tiny;
+    }
+
+    &__text {
+      font-size: @font-size--small;
+    }
   }
 }

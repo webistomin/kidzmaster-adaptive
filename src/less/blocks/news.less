@@ -79,6 +79,10 @@
     color: @color--semiblack;
   }
 
+  &__picture {
+    line-height: 0;
+  }
+
   &__photo {
     vertical-align: top;
   }
@@ -94,5 +98,30 @@
     font-size: @font-size--tiny;
     line-height: @line-height--tiny;
     color: @color--grey;
+  }
+}
+
+@media @tablet-widths {
+  .news {
+    &__title {
+      font-size: @font-size--medium;
+      line-height: @line-height--tiny;
+    }
+
+    &__label {
+      font-size: @font-size--small;
+    }
+
+    &__date {
+      font-size: @font-size--small;
+    }
+
+    &__text {
+      font-size: @font-size--small;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+    }
   }
 }

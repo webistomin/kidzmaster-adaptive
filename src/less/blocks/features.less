@@ -77,3 +77,26 @@
     fill: @color--lightblue;
   }
 }
+
+@media @tablet-widths {
+  .features {
+    &__title {
+      font-size: @font-size--medium;
+      line-height: @line-height--tiny;
+    }
+
+    &__text {
+      font-size: @font-size--small;
+    }
+
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      margin-right: 10px;
+    }
+  }
+}
