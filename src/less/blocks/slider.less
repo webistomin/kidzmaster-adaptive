@@ -112,3 +112,66 @@
     }
   }
 }
+
+@media @desktop-widths {
+  .slider {
+    padding-top: 200px;
+    padding-bottom: 320px;
+    margin-bottom: 0;
+    background-size: 77% 41%;
+    background-position: 146% 100%;
+
+    &__container {
+      position: relative;
+      align-items: flex-end;
+    }
+
+    &__page {
+      display: none;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: baseline;
+    }
+
+    &__controls {
+      position: absolute;
+      left: 218px;
+      top: 316px;
+      z-index: 100;
+    }
+
+    #slide-1:checked ~ &__page--first {
+      display: flex;
+    }
+
+    #slide-2:checked ~ &__page--second {
+      display: flex;
+    }
+
+    #slide-3:checked ~ &__page--third {
+      display: flex;
+    }
+
+    &__images {
+      position: absolute;
+      width: 500px;
+      top: -94px;
+      left: 0;
+    }
+
+    &__description {
+      width: 600px;
+    }
+
+    &__heading {
+      font-size: @font-size--huge;
+      line-height: @line-height--huge;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-size: @font-size--large;
+      line-height: @line-height--huge;
+    }
+  }
+}
