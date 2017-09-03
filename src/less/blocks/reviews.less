@@ -3,7 +3,7 @@
   padding-bottom: 20px;
   margin-bottom: 20px;
   background-color: @color--lightblue;
-  background-image: url(../img/house-bg.svg);
+  background-image: data-uri("image/svg+xml;charset=UTF-8", "../img/house-bg.svg");
   background-position: bottom;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -27,16 +27,22 @@
       position: absolute;
       top: -12px;
       content: "";
-      background-image: url("../img/quotes.svg");
+      background-image: data-uri("image/svg+xml;charset=UTF-8","../img/quotes.svg");
       background-repeat: no-repeat;
       width: 280px;
       height: 247px;
     }
   }
 
-  &__photo {
+  //&__photo {
+  //  height: 150px;
+  //  width: 150px;
+  //  border-radius: 50%;
+  //}
+
+  &__picture {
     height: 150px;
-    width: 150px;
+    overflow: hidden;
     border-radius: 50%;
   }
 

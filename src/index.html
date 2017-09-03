@@ -131,7 +131,7 @@ To emphasise this I use inline style="display: none" -->
         </div>
         <div class="slider__page slider__page--second">
           <div class="slider__images">
-            <img src="http://placehold.it/769x663" alt="Child" class="slider__image" width="769" height="663">
+            <img src="img/slide-1.png" alt="Child" class="slider__image" width="769" height="663">
           </div>
           <div class="slider__description">
             <h1 class="slider__heading">Lorem ipsum dolor</h1>
@@ -141,7 +141,7 @@ To emphasise this I use inline style="display: none" -->
         </div>
         <div class="slider__page slider__page--third">
           <div class="slider__images">
-            <img src="http://placehold.it/769x663" alt="Child" class="slider__image" width="769" height="663">
+            <img src="img/slide-1.png" alt="Child" class="slider__image" width="769" height="663">
           </div>
           <div class="slider__description">
             <h1 class="slider__heading">Lorem ipsum dolor</h1>
@@ -243,22 +243,46 @@ To emphasise this I use inline style="display: none" -->
           <p class="features__text">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcoolor sit amet</p>
           <ul class="features__list">
             <li class="features__item">
-              <a href="#" class="features__link features__link--first">Healthy meals</a>
+              <a href="#" class="features__link features__link--first">Healthy meals
+                <svg class="features__icon-apple" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-apple"></use>
+                </svg>
+              </a>
             </li>
             <li class="features__item">
-              <a href="#" class="features__link features__link--second">Multimedia Class</a>
+              <a href="#" class="features__link features__link--second">Multimedia Class
+                <svg class="features__icon-multimedia" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-multimedia"></use>
+                </svg>
+              </a>
             </li>
             <li class="features__item">
-              <a href="#" class="features__link features__link--third">Art Class</a>
+              <a href="#" class="features__link features__link--third">Art Class
+                <svg class="features__icon-art" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-art"></use>
+                </svg>
+              </a>
             </li>
             <li class="features__item">
-              <a href="#" class="features__link features__link--fourth">Events</a>
+              <a href="#" class="features__link features__link--fourth">Events
+                <svg class="features__icon-calendar" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-calendar"></use>
+                </svg>
+              </a>
             </li>
             <li class="features__item">
-              <a href="#" class="features__link features__link--fifth">Teachers</a>
+              <a href="#" class="features__link features__link--fifth">Teachers
+                <svg class="features__icon-teacher" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-teacher"></use>
+                </svg>
+              </a>
             </li>
             <li class="features__item">
-              <a href="#" class="features__link features__link--sixth">Achievements</a>
+              <a href="#" class="features__link features__link--sixth">Achievements
+                <svg class="features__icon-man" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-man"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -269,56 +293,72 @@ To emphasise this I use inline style="display: none" -->
           <p class="teachers__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing aelit, sed do eiusmod tempor incididunt.</p>
           <div class="teachers__list">
             <div class="teachers__item">
-              <img src="img/teacher-1.jpg" alt="Martina Doe" class="teachers__photo">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-1.jpg" srcset="img/teacher-1@2x.jpg 2x" alt="Martina Doe" width="333" height="333">
+              </picture>
               <div class="teachers__description">
                 <span class="teachers__name">Martina Doe</span>
                 <span class="teachers__post">(Principle)</span>
               </div>
             </div>
             <div class="teachers__item">
-              <img src="img/teacher-2.jpg" alt="John Doe" class="teachers__photo">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-2.jpg" srcset="img/teacher-2@2x.jpg 2x" alt="Jogn Doe" width="333" height="333">
+              </picture>
               <div class="teachers__description">
                 <span class="teachers__name">John Doe</span>
                 <span class="teachers__post">(Vice-principle)</span>
               </div>
             </div>
             <div class="teachers__item">
-              <img src="img/teacher-3.jpg" alt="Luis Alexa" class="teachers__photo">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-3.jpg" srcset="img/teacher-3@2x.jpg 2x" alt="Luis Alexa" width="333" height="333">
+              </picture>
               <div class="teachers__description">
                 <span class="teachers__name">Luis Alexa</span>
                 <span class="teachers__post">(Dance teacher)</span>
               </div>
             </div>
             <div class="teachers__item">
-              <img src="img/teacher-4.jpg" alt="David Vettori" class="teachers__photo">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-4.jpg" srcset="img/teacher-4@2x.jpg 2x" alt="David Vettori" width="333" height="333">
+              </picture>
               <div class="teachers__description">
                 <span class="teachers__name">David Vettori</span>
                 <span class="teachers__post">(Art teacher)</span>
               </div>
             </div>
             <div class="teachers__item">
-              <img src="img/teacher-5.jpg" alt="David Lui" class="teachers__photo">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-5.jpg" srcset="img/teacher-5@2x.jpg 2x" alt="David Lui" width="333" height="333">
+              </picture>
               <div class="teachers__description">
                 <span class="teachers__name">David Lui</span>
                 <span class="teachers__post">(Math teacher)</span>
               </div>
             </div>
             <div class="teachers__item">
-              <img src="img/teacher-6.jpg" alt="Bonnie Odd" class="teachers__photo">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-6.jpg" srcset="img/teacher-6@2x.jpg 2x" alt="Bonnie Odd" width="333" height="333">
+              </picture>
               <div class="teachers__description">
                 <span class="teachers__name">Bonnie Odd</span>
                 <span class="teachers__post">(Painting teacher)</span>
               </div>
             </div>
             <div class="teachers__item">
-              <img src="img/teacher-7.jpg" alt="John Hassi" class="teachers__photo">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-7.jpg" srcset="img/teacher-7@2x.jpg 2x" alt="John Hassi" width="333" height="333">
+              </picture>
               <div class="teachers__description">
                 <span class="teachers__name">John Hassi</span>
                 <span class="teachers__post">(Language teacher)</span>
               </div>
             </div>
             <div class="teachers__item">
-              <img src="img/teacher-8.jpg" alt="John Alena" class="teachers__photo">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-8.jpg" srcset="img/teacher-8@2x.jpg 2x" alt="John Alena" width="333" height="333">
+              </picture>
               <div class="teachers__description">
                 <span class="teachers__name">John Alena</span>
                 <span class="teachers__post">(Music teacher)</span>
@@ -338,17 +378,23 @@ To emphasise this I use inline style="display: none" -->
           <label class="reviews__label" for="reviews__slide3"></label>
         </div>
         <blockquote class="reviews__page reviews__page--first">
-          <img src="img/slide1.jpg" alt="#" width="348" height="523" class="reviews__photo">
+          <picture class="reviews__picture">
+            <img class="reviews__photo" src="img/slide1.jpg" srcset="img/slide1@2x.jpg 2x" alt="#" width="150" height="523">
+          </picture>
           <cite class="reviews__author">Mickel John</cite>
           <p class="reviews__text">Lorem ipsum dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcoolor sit amet, </p>
         </blockquote>
           <blockquote class="reviews__page reviews__page--second">
-            <img src="img/slide1.jpg" alt="#" width="348" height="523" class="reviews__photo">
+            <picture class="reviews__picture">
+              <img class="reviews__photo" src="img/slide1.jpg" srcset="img/slide1@2x.jpg 2x" alt="#" width="150" height="523">
+            </picture>
             <cite class="reviews__author">Mickel John</cite>
             <p class="reviews__text">Lorem ipsum dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcoolor sit amet, </p>
           </blockquote>
           <blockquote class="reviews__page reviews__page--third">
-            <img src="img/slide1.jpg" alt="#" width="348" height="523" class="reviews__photo">
+            <picture class="reviews__picture">
+              <img class="reviews__photo" src="img/slide1.jpg" srcset="img/slide1@2x.jpg 2x" alt="#" width="150" height="523">
+            </picture>
             <cite class="reviews__author">Mickel John</cite>
             <p class="reviews__text">Lorem ipsum dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcoolor sit amet, </p>
           </blockquote>
@@ -367,17 +413,24 @@ To emphasise this I use inline style="display: none" -->
             </div>
           <div class="news__page news__page--first">
             <div class="news__item">
-              <img src="img/news-1.jpg" alt="#" class="news__photo">
+              <picture>
+                <img class="reviews__photo" src="img/news-1.jpg" srcset="img/news-1@2x.jpg 2x" alt="#" width="655" height="437">
+              </picture>
               <time class="news__date" datetime="2017-02-25">February 25, 2017</time>
               <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
             </div>
             <div class="news__item">
-              <img src="img/news-2.jpg" alt="#" class="news__photo">
+              <picture>
+                <img class="reviews__photo" src="img/news-2.jpg" srcset="img/news-2@2x.jpg 2x" alt="#" width="655" height="437">
+              </picture>
+              <img src="" alt="#" class="news__photo">
               <time class="news__date" datetime="2017-02-20">February 20, 2017</time>
               <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
             </div>
             <div class="news__item">
-              <img src="img/news-3.jpg" alt="#" class="news__photo">
+              <picture>
+                <img class="reviews__photo" src="img/news-3.jpg" srcset="img/news-3@2x.jpg 2x" alt="#" width="658" height="433">
+              </picture>
               <time class="news__date" datetime="2017-02-19">February 19, 2017</time>
               <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
             </div>
@@ -515,6 +568,6 @@ To emphasise this I use inline style="display: none" -->
       </section>
     </div>
   </footer>
-  <script src="js/toggler.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
