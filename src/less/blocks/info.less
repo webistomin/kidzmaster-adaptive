@@ -25,61 +25,40 @@
     &:nth-child(even) {
       background-color: @color--beige;
     }
-
-    &--first {
-      &::before {
-        position: absolute;
-        top: 32px;
-        left: 50%;
-        transform: translateX(-50%);
-        content: "";
-        width: 48px;
-        height: 48px;
-        background-image: url("../img/icon-house.svg");
-        background-repeat: no-repeat;
-      }
-    }
-
-    &--second {
-      &::before {
-        position: absolute;
-        top: 32px;
-        left: 50%;
-        transform: translateX(-50%);
-        content: "";
-        width: 48px;
-        height: 48px;
-        background-image: url("../img/icon-newspaper.svg");
-      }
-    }
-
-    &--third {
-      &::before {
-        position: absolute;
-        top: 32px;
-        left: 50%;
-        transform: translateX(-50%);
-        content: "";
-        width: 48px;
-        height: 48px;
-        background-image: url("../img/icon-clock.svg");
-      }
-    }
-
-    &--fourth {
-      &::before {
-        position: absolute;
-        top: 32px;
-        left: 50%;
-        transform: translateX(-50%);
-        content: "";
-        width: 48px;
-        height: 48px;
-        background-image: url("../img/icon-book.svg");
-        background-repeat: no-repeat;
-      }
-    }
   }
+
+  &__icon-house,
+  &__icon-newspaper,
+  &__icon-clock,
+  &__icon-book {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 48px;
+    height: 48px;
+  }
+
+  &__icon-house {
+    fill: #2cc990;
+  }
+
+  &__icon-newspaper {
+    fill: #e6aa3c;
+  }
+
+  &__icon-clock {
+    fill: #7bafda;
+  }
+
+  &__icon-book {
+    fill: #9f0088;
+  }
+
+
+
+
 
   &__link {
     display: block;

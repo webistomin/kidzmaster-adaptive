@@ -137,35 +137,17 @@
   }
 
   &__social-link {
+    position: relative;
     display: block;
     width: 35px;
     height: 35px;
     background-color: transparent;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
+  }
 
-    &--fb {
-      background-image: url("../img/icon-facebook.svg");
-    }
-
-    &--tw {
-      background-image: url("../img/icon-twitter.svg");
-      background-position: 0 4px;
-    }
-
-    &--google{
-      background-image: url("../img/icon-google.svg");
-    }
-
-    &--linkedin {
-      background-image: url("../img/icon-linkedin.svg");
-    }
-
-    &--yt {
-      background-image: url("../img/icon-youtube.svg");
-      background-position: 0 4px;
-    }
+  &__icon-twitter,
+  &__icon-youtube {
+    position: absolute;
+    bottom: -4px;
   }
 
 
