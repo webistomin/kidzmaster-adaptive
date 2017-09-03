@@ -61,3 +61,35 @@
     }
   }
 }
+
+@media @desktop-widths {
+  .intro {
+    &__container {
+      align-items: flex-start;
+      background-image: data-uri("image/svg+xml;charset=UTF-8","../img/children-bg.svg");
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+    }
+
+    &__subtitle {
+      font-size: @font-size--medium;
+      line-height: @line-height--big;
+    }
+
+    &__title {
+      font-size: @font-size--big;
+      line-height: @line-height--big;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      width: 490px;
+      text-align: left;
+    }
+
+    &__subtext {
+      width: 490px;
+      text-align: left;
+    }
+  }
+}

@@ -48,7 +48,29 @@
   }
 
   &__image {
+    width: 100%;
+    min-height: 332px;
     vertical-align: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--first {
+      background-image: url("../img/class-1.jpg");
+    }
+
+    &--second {
+      background-image: url("../img/class-2.jpg");
+    }
+
+    &--third {
+      background-image: url("../img/class-3.jpg");
+      background-position: 100% 100%;
+    }
+
+    &--fourth {
+      background-image: url("../img/class-4.jpg");
+      background-position: 100% 100%;
+    }
   }
 
   &__number {
@@ -119,5 +141,93 @@
     &__text {
       font-size: @font-size--small;
     }
+  }
+}
+
+@media @desktop-widths {
+  .courses {
+    padding-top: 40px;
+
+    &__container {
+      align-items: flex-start;
+    }
+
+    &__title {
+      font-size: @font-size--big;
+      line-height: @line-height--medium;
+      text-transform: uppercase;
+    }
+
+    &__subtitle {
+      width: 458px;
+      font-size: @font-size--tiny;
+      line-height: @line-height--tiny;
+      text-align: left;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 25%;
+      padding-bottom: 0;
+    }
+
+    &__image {
+      &--second,
+      &--fourth {
+        border-bottom-left-radius: 27px;
+        border-bottom-right-radius: 27px;
+        order: 2;
+      }
+
+      &--first,
+      &--third {
+        border-top-left-radius: 27px;
+        border-top-right-radius: 27px;
+      }
+    }
+
+    &__description {
+      height: 332px;
+      align-items: flex-start;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    &__number {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 28px;
+    }
+
+    &__icon-folder {
+      left: 0;
+    }
+
+    &__class {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    &__btn {
+      text-align: left;
+    }
+
+    &__button {
+      width: 210px;
+    }
+
   }
 }
