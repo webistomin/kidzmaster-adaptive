@@ -93,3 +93,42 @@
     }
   }
 }
+
+@media @desktop-widths {
+  .features {
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      background-image: url("../img/children-bg-3.svg");
+      background-repeat: no-repeat;
+      background-size: 20% 55%;
+      background-position: top left;
+    }
+
+    &__heading {
+      width: 490px;
+    }
+
+    &__list {
+      width: 555px;
+    }
+
+    &__title {
+      font-size: @font-size--big;
+      line-height: @line-height--huge;
+      text-align: left;
+      margin: 0;
+    }
+
+    &__text {
+      text-align: left;
+      margin: 0;
+    }
+
+  }
+}
