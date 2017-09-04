@@ -1,43 +1,49 @@
 .intro {
+  margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+
   background-color: @color--lightblue;
 
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .container();
   }
 
   &__subtitle {
+    font-weight: 500;
     font-size: @font-size--small;
     font-family: @dosis;
-    font-weight: 500;
   }
 
   &__title {
     margin: 0;
+
+    font-weight: 700;
     font-size: @font-size--normal;
     font-family: @dosis;
-    font-weight: 700;
   }
 
   &__text {
     margin-top: 20px;
+
     text-align: center;
   }
 
   &__subtext {
     margin-top: 20px;
     margin-bottom: 20px;
+
     text-align: center;
   }
 
   &__btn {
-    background-color: @color--white;
     color: @color--lightblue;
+
+    background-color: @color--white;
   }
 }
 
@@ -49,8 +55,9 @@
     }
 
     &__subtitle {
-      font-size: @font-size--normal;
       margin-bottom: 10px;
+
+      font-size: @font-size--normal;
     }
 
     &__text {
@@ -68,6 +75,7 @@
     padding-bottom: 50px;
     &__container {
       align-items: flex-start;
+
       background-image: data-uri("image/svg+xml;charset=UTF-8","../img/children-bg.svg");
       background-repeat: no-repeat;
       background-position: 100% 100%;
@@ -86,11 +94,13 @@
 
     &__text {
       width: 490px;
+
       text-align: left;
     }
 
     &__subtext {
       width: 490px;
+
       text-align: left;
     }
   }

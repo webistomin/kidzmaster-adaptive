@@ -1,36 +1,41 @@
 .reviews {
+  margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+
   background-color: @color--lightblue;
   background-image: data-uri("image/svg+xml;charset=UTF-8", "../img/house-bg.svg");
+  background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
 
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .container();
   }
 
   &__page {
     position: relative;
+
     display: none;
-    order: 1;
     flex-direction: column;
     align-items: center;
+    order: 1;
     padding-top: 40px;
 
     &::before {
+      content: "";
       position: absolute;
       top: -12px;
-      content: "";
-      background-image: data-uri("image/svg+xml;charset=UTF-8","../img/quotes.svg");
-      background-repeat: no-repeat;
+
       width: 280px;
       height: 247px;
+
+      background-image: data-uri("image/svg+xml;charset=UTF-8","../img/quotes.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -43,6 +48,7 @@
   &__picture {
     height: 150px;
     overflow: hidden;
+
     border-radius: 50%;
   }
 
@@ -63,9 +69,10 @@
     display: block;
     width: 8px;
     height: 8px;
+
+    background-color: transparent;
     border: 2px solid @color--white;
     border-radius: 50%;
-    background-color: transparent;
 
     &:hover {
       background-color: @color--white;
@@ -93,19 +100,21 @@
   &__author {
     margin-top: 60px;
     margin-bottom: 10px;
+
+    font-weight: 700;
     font-size: @font-size--normal;
     font-family: @dosis;
-    font-weight: 700;
-    color: @color--white;
     text-align: center;
+    color: @color--white;
     font-style: normal;
   }
 
   &__text {
     margin-bottom: 10px;
-    text-align: center;
-    font-family: @dosis;
+
     font-weight: 600;
+    font-family: @dosis;
+    text-align: center;
   }
 }
 
@@ -126,11 +135,13 @@
   .reviews {
     padding-top: 80px;
     padding-bottom: 50px;
+
     background-size: 138% 78%;
 
     &__author {
       margin-top: 115px;
       margin-bottom: 50px;
+
       font-size: @font-size--big;
       line-height: @line-height--medium;
     }
@@ -138,6 +149,7 @@
     &__text {
       width: 945px;
       margin-bottom: 60px;
+
       font-size: @font-size--small;
       line-height: @line-height--tiny;
     }

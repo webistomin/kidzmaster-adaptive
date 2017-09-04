@@ -1,21 +1,23 @@
 .news {
+  margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
 
   &__container {
-    .container();
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .container();
   }
 
   &__title {
     margin: 0;
+
+    font-weight: 700;
     font-size: @font-size--normal;
     line-height: @line-height--tiny;
     font-family: @dosis;
-    font-weight: 700;
     text-align: center;
     color: @color--lightblue;
     text-transform: capitalize;
@@ -43,12 +45,15 @@
     width: 33.33%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: @color--lightgrey;
-    border-bottom: 2px solid @color--lightgrey;
+
     text-align: center;
+    color: @color--lightgrey;
+
+    border-bottom: 2px solid @color--lightgrey;
 
     &:hover {
       color: @color--lightblue;
+
       border-color: @color--lightblue;
     }
   }
@@ -57,6 +62,7 @@
   #news__slide2:checked ~ &__controls &__label[for="news__slide2"],
   #news__slide3:checked ~ &__controls &__label[for="news__slide3"] {
     color: @color--lightblue;
+
     border-color: @color--lightblue;
   }
 
@@ -77,6 +83,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
+
     color: @color--semiblack;
   }
 
@@ -90,13 +97,14 @@
 
   &__text {
     font-family: @robotoslab;
-    color: @color--semiblack;
     text-align: center;
+    color: @color--semiblack;
   }
 
   &__date {
     display: block;
     margin-top: 10px;
+
     font-size: @font-size--tiny;
     line-height: @line-height--tiny;
     color: @color--grey;
@@ -106,9 +114,9 @@
 @media @tablet-widths {
   .news {
     &__title {
-      text-transform: capitalize;
       font-size: @font-size--medium;
       line-height: @line-height--tiny;
+      text-transform: capitalize;
     }
 
     &__label {
@@ -120,8 +128,8 @@
     }
 
     &__text {
-      font-family: @robotoslab;
       font-size: @font-size--small;
+      font-family: @robotoslab;
     }
 
     &__item {
@@ -141,9 +149,9 @@
     }
 
     &__page {
-      width: 100%;
       flex-direction: row;
       justify-content: space-between;
+      width: 100%;
     }
 
     &__controls {
@@ -157,10 +165,11 @@
 
     &__title {
       width: 100%;
-      text-align: left;
       margin-bottom: 34px;
+
       font-size: @font-size--big;
       line-height: @line-height--small;
+      text-align: left;
     }
 
     &__item {

@@ -1,5 +1,4 @@
 .info {
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -8,6 +7,7 @@
 
   &__item {
     position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,13 +30,15 @@
   &__icon-newspaper,
   &__icon-clock,
   &__icon-book {
+    content: "";
     position: absolute;
     top: 32px;
     left: 50%;
-    transform: translateX(-50%);
-    content: "";
+
     width: 48px;
     height: 48px;
+
+    transform: translateX(-50%);
   }
 
   &__icon-house {
@@ -57,19 +59,21 @@
 
   &__link {
     display: block;
+
+    font-weight: 600;
     font-size: @font-size--small;
     font-family: @roboto;
-    font-weight: 600;
     color: @color--lightblue;
   }
 
   &__text {
     width: 100%;
+
     font-size: @font-size--tiny;
     line-height: @line-height--tiny;
     font-family: @roboto;
-    color: @color--darkgrey;
     text-align: center;
+    color: @color--darkgrey;
   }
 }
 
@@ -88,7 +92,6 @@
 
 @media @desktop-widths {
   .info {
-
     &__list {
       flex-direction: row;
     }

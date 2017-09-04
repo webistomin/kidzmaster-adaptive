@@ -7,6 +7,7 @@
     margin-left: 20px;
     padding-top: 18px;
     padding-bottom: 60px;
+
     text-align: left;
   }
 
@@ -18,10 +19,13 @@
     position: absolute;
     top: 45px;
     right: 20px;
+
     width: 45px;
     height: 45px;
     padding: 0;
+
     font-size: 0;
+
     background-color: transparent;
     border: none;
     outline: none;
@@ -32,8 +36,10 @@
     position: absolute;
     top: 20px;
     left: 5px;
+
     width: 40px;
     height: 4px;
+
     background-color: @color--white;
     transform: rotate(45deg);
   }
@@ -43,8 +49,10 @@
     position: absolute;
     top: 20px;
     left: 5px;
+
     width: 40px;
     height: 4px;
+
     background: @color--white;
     transform: rotate(-45deg);
   }
@@ -59,17 +67,22 @@
     position: absolute;
     top: 10px;
     left: 0;
+
     width: 100%;
     height: 4px;
+
     background: @color--white;
     box-shadow: 0 10px 0 0 @color--white,
-                0 20px 0 0 @color--white;
+    0 20px 0 0 @color--white;
+
     transition: all 0.2s ease-in;
   }
 
   &__container {
     position: absolute;
+
     width: 100%;
+
     background-color: @color--lightblue;
   }
 
@@ -107,13 +120,14 @@
     width: 100%;
     padding-top: 28px;
     padding-bottom: 28px;
-    font-family: @roboto;
-    font-size: @font-size--tiny;
+
     font-weight: 700;
+    font-size: @font-size--tiny;
     line-height: @line-height--tiny;
+    font-family: @roboto;
+    text-align: center;
     color: @color--white;
     text-transform: uppercase;
-    text-align: center;
 
     &:hover {
       color: rgba(255,255,255,0.6);
@@ -150,9 +164,11 @@
   &__icon-reg,
   &__icon-login {
     position: absolute;
-    left: 50%;
-    transform: translateX(-80px);
     top: 30px;
+    left: 50%;
+
+    transform: translateX(-80px);
+
     fill: #ffffff;
   }
 }
@@ -186,8 +202,9 @@
     }
 
     &--closed &__container {
-      display: block;
       position: relative;
+
+      display: block;
     }
 
     &__item {
@@ -201,62 +218,68 @@
     }
 
     &__user-block {
-      width: 250px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      width: 250px;
     }
 
     &__info {
-      width: 320px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      width: 320px;
     }
 
     &__list {
-      border-top: 1px solid rgba(255,255,255,0.5);
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
+      border-top: 1px solid rgba(255,255,255,0.5);
     }
 
     &__logo {
-      margin-left: 0;
       margin-right: 82px;
+      margin-left: 0;
       padding: 0;
     }
 
     &__link {
       padding-top: 14px;
       padding-bottom: 14px;
+
+      font-weight: 500;
       font-size: @font-size--tiny;
       line-height: @line-height--tiny;
-      font-weight: 500;
 
       &--home {
         padding-top: 0;
       }
 
       &--phone {
+        position: relative;
+
         box-sizing: border-box;
         width: 135px;
-        position: relative;
         padding-left: 22px;
+
         text-transform: none;
       }
 
       &--mail {
+        position: relative;
+
         box-sizing: border-box;
         width: 135px;
-        position: relative;
         padding-left: 22px;
+
         text-transform: none;
       }
 
       &--search {
-        text-transform: none;
         color: transparent;
+        text-transform: none;
       }
 
       &--login {
@@ -273,11 +296,13 @@
     &__icon-login,
     &__icon-mail,
     &__icon-phone {
-      width: 16px;
-      height: 13px;
       position: absolute;
       top: 20px;
       left: 0;
+
+      width: 16px;
+      height: 13px;
+
       fill: #ffffff;
     }
 
@@ -288,4 +313,3 @@
     }
   }
 }
-
