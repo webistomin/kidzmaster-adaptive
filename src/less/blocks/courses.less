@@ -69,12 +69,12 @@
 
     &--third {
       background-image: url("../img/class-3.jpg");
-      background-position: 100% 100%;
+      background-position: 50% 50%;
     }
 
     &--fourth {
       background-image: url("../img/class-4.jpg");
-      background-position: 100% 100%;
+      background-position: 50% 50%;
     }
   }
 
@@ -140,6 +140,13 @@
 
     &__subtitle {
       font-size: @font-size--small;
+    }
+
+    &__image {
+      &--third,
+      &--fourth {
+        background-position: 50% 50%;
+      }
     }
 
     &__number {
