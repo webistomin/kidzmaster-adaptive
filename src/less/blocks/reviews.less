@@ -61,21 +61,21 @@
 
   &__label {
     display: block;
-    width: 10px;
-    height: 10px;
-    border: 2px solid @color--lightblue;
+    width: 8px;
+    height: 8px;
+    border: 2px solid @color--white;
     border-radius: 50%;
-    background-color: @color--white;
+    background-color: transparent;
 
     &:hover {
-      background-color: @color--black;
+      background-color: @color--white;
     }
   }
 
-  #reviews__slide1:checked ~ &__controls &__label[for="reviews__slide-1"],
-  #reviews__slide2:checked ~ &__controls &__label[for="reviews__slide-2"],
-  #reviews__slide3:checked ~ &__controls &__label[for="reviews__slide-3"] {
-    background-color: @color--black;
+  #reviews__slide1:checked ~ &__controls &__label[for="reviews__slide1"],
+  #reviews__slide2:checked ~ &__controls &__label[for="reviews__slide2"],
+  #reviews__slide3:checked ~ &__controls &__label[for="reviews__slide3"] {
+    background-color: @color--white;
   }
 
   #reviews__slide1:checked ~ &__page--first {
@@ -123,5 +123,23 @@
 }
 
 @media @desktop-widths {
-  
+  .reviews {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-size: 138% 78%;
+
+    &__author {
+      margin-top: 115px;
+      margin-bottom: 50px;
+      font-size: @font-size--big;
+      line-height: @line-height--medium;
+    }
+
+    &__text {
+      width: 945px;
+      margin-bottom: 60px;
+      font-size: @font-size--small;
+      line-height: @line-height--tiny;
+    }
+  }
 }
