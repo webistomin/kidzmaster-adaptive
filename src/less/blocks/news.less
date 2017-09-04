@@ -18,6 +18,7 @@
     font-weight: 700;
     text-align: center;
     color: @color--lightblue;
+    text-transform: capitalize;
   }
 
   &__page {
@@ -88,6 +89,7 @@
   }
 
   &__text {
+    font-family: @robotoslab;
     color: @color--semiblack;
     text-align: center;
   }
@@ -104,6 +106,7 @@
 @media @tablet-widths {
   .news {
     &__title {
+      text-transform: capitalize;
       font-size: @font-size--medium;
       line-height: @line-height--tiny;
     }
@@ -117,11 +120,64 @@
     }
 
     &__text {
+      font-family: @robotoslab;
       font-size: @font-size--small;
     }
 
     &__item {
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .news {
+    padding-top: 50px;
+    padding-bottom: 52px;
+
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__page {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__controls {
+      width: 360px;
+      margin-bottom: 42px;
+    }
+
+    &__label {
+      text-transform: uppercase;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 34px;
+      font-size: @font-size--big;
+      line-height: @line-height--small;
+    }
+
+    &__item {
+      width: 360px;
+    }
+
+    &__photo {
+      border-radius: 27px;
+    }
+
+    &__date {
+      align-self: flex-start;
+    }
+
+    &__text {
+      font-family: @robotoslab;
+      text-align: left;
     }
   }
 }
