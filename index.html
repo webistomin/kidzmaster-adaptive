@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" type="image/png" href="favicon-64x64.png" sizes="64x64">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<title>KidzMaster: 🌈Play, Learn, Grow</title>
+</head>
+<body>
+<!-- this svg is a container for svg icons and should not appear on the page.
+To emphasise this I use inline style="display: none" -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-apple" viewBox="0 0 47.01 47.04"><title>&#x420;&#x435;&#x441;&#x443;&#x440;&#x441; 1</title><g id="&#x421;&#x43B;&#x43E;&#x439;_2" data-name="&#x421;&#x43B;&#x43E;&#x439; 2"><path class="cls-1" d="M5.34 22.38a1.07 1.07 0 1 1-1.07 1.07 1.07 1.07 0 0 1 1.07-1.07zm40.59 6.4a1 1 0 0 0-1.07 1.07A15 15 0 0 1 15 30.91h26.7a1.09 1.09 0 0 0 1.07-1.07v-4.26c-.32-8.85-4.49-16.2-10.26-18.44a1.08 1.08 0 0 0-.75 2c4.91 1.92 8.65 8.74 8.87 16.52v3.2H13.89A1 1 0 0 0 12.82 30 17.09 17.09 0 0 0 47 30a1 1 0 0 0-.9-1.17h-.17zM29.8 2a1 1 0 0 0-1-1 8 8 0 0 0-6.37 2.2V1.07a1.07 1.07 0 0 0-2.14 0v7.35a3.32 3.32 0 0 1-1.39-.64 8.44 8.44 0 0 0-5-1.39C6.2 6.4 0 15.46 0 26.65S6.2 46.9 13.89 46.9a9.27 9.27 0 0 0 3.42-.64 1.11 1.11 0 0 0 .64-1.38 1.07 1.07 0 0 0-1.37-.65 7.45 7.45 0 0 1-2.67.53c-6.52 0-11.75-8.1-11.75-18.12S7.37 8.53 13.89 8.53a6.25 6.25 0 0 1 3.74 1 6.74 6.74 0 0 0 3.74 1.17h.75a7.67 7.67 0 0 0 5.55-2.24A7.63 7.63 0 0 0 29.8 2zm-3.63 4.9a5.25 5.25 0 0 1-3.74 1.6v-.29A4.92 4.92 0 0 1 24 4.8a5.25 5.25 0 0 1 3.74-1.6 5.23 5.23 0 0 1-1.6 3.73zm-12.29 3.76c-3.52 0-6.73 3.09-8.44 8.21a1.11 1.11 0 0 0 .64 1.39h.43a1 1 0 0 0 1-.75c1.39-4.16 3.85-6.71 6.41-6.71a1.07 1.07 0 0 0 .08-2.14h-.12zm21.26 22.81a1.17 1.17 0 0 0-1.6-.21 4.34 4.34 0 0 1-5 0 1.07 1.07 0 0 0-1.33 1.67 6.42 6.42 0 0 0 7.69 0 1.14 1.14 0 0 0 .24-1.46z" id="&#x421;&#x43B;&#x43E;&#x439;_1-2" data-name="&#x421;&#x43B;&#x43E;&#x439; 1"/></g></symbol>
+  <symbol id="icon-art" viewBox="0 0 53 48"><title>&#x420;&#x435;&#x441;&#x443;&#x440;&#x441; 1</title><g id="&#x421;&#x43B;&#x43E;&#x439;_2" data-name="&#x421;&#x43B;&#x43E;&#x439; 2"><g id="&#x421;&#x43B;&#x43E;&#x439;_1-2" data-name="&#x421;&#x43B;&#x43E;&#x439; 1"><path id="Forma_1" data-name="Forma 1" class="cls-1" d="M13.83 32a4.3 4.3 0 1 0-2.67 7.66 4.28 4.28 0 0 0 4.26-4.77A4.24 4.24 0 0 0 13.83 32zM13 36.77a2.33 2.33 0 1 1-.37-3.26 2.34 2.34 0 0 1 .37 3.26zm18-14.91a4.31 4.31 0 1 0-1.4-.24 4.3 4.3 0 0 0 1.4.24zm-2.21-5.07A2.32 2.32 0 0 1 30 15.46a2.37 2.37 0 0 1 1-.23 2.34 2.34 0 0 1 2.11 1.32 2.31 2.31 0 0 1-1.05 3.09 2.24 2.24 0 0 1-1 .23 2.37 2.37 0 0 1-2.11-1.32 2.31 2.31 0 0 1-.1-1.77zm-8.43-1.9A4.3 4.3 0 0 0 22.3 6.5a4.5 4.5 0 0 0-1-.11 4.3 4.3 0 0 0-.94 8.5zm-1.33-4.71a2.33 2.33 0 0 1 2.8-1.75 2.37 2.37 0 0 1 1.47 1 2.31 2.31 0 0 1 .29 1.74A2.35 2.35 0 0 1 21.34 13a2.3 2.3 0 0 1-.52-.06 2.37 2.37 0 0 1-1.47-1 2.31 2.31 0 0 1-.29-1.74zm-6.45 7.17a4.29 4.29 0 0 0 .7-6 4.29 4.29 0 1 0-.68 6.05zm-4.5-1.92a2.32 2.32 0 0 1 1.83-3.77 2.36 2.36 0 0 1 1.83.87 2.33 2.33 0 0 1-3.66 2.9zM52.63 7.7a1.26 1.26 0 0 0-.95-.38c-.56 0-2 0-11.05 7.72l-.54.47A24.3 24.3 0 0 0 32 4.78 23.8 23.8 0 0 0 17.63 0 23.34 23.34 0 0 0 6.42 3.25C2.28 5.7 0 9 0 12.49c0 4.23 2.37 6 4.27 7.42C5.82 21.07 7.05 22 7.05 24s-1.22 2.92-2.78 4.08C2.37 29.5 0 31.27 0 35.5c0 3.5 2.29 6.79 6.43 9.25A23.49 23.49 0 0 0 17.64 48a24 24 0 0 0 24-23.73c1.52-1.75 3-3.48 4.33-5.11 2.3-2.79 4.07-5.1 5.25-6.85C52.8 10 53.49 8.57 52.63 7.7zm-19.4 31.88A21.88 21.88 0 0 1 17.65 46C11.33 46 2 41.61 2 35.5c0-3.24 1.69-4.5 3.48-5.84S9 27 9 24s-1.9-4.42-3.57-5.67S2 15.73 2 12.49c0-3.75 3.37-6.34 5.41-7.54A21.67 21.67 0 0 1 17.62 2a21.86 21.86 0 0 1 13.21 4.4 22.22 22.22 0 0 1 7.67 10.49c-4.24 3.74-8.83 8.05-12.26 11.51-5.68.74-6.46 4.56-7 7.36-.48 2.39-.8 3.55-2.63 3.7a1 1 0 0 0-.88.82 1 1 0 0 0 .59 1.07 17.75 17.75 0 0 0 6.18 1.2 10 10 0 0 0 5.81-1.65 10.23 10.23 0 0 0 3.92-6.38c2.24-2.28 4.79-5 7.32-7.86a21.84 21.84 0 0 1-6.3 12.92zm-3-5.24c-1 4.14-3.64 6.24-7.76 6.24a14.39 14.39 0 0 1-3-.34 8 8 0 0 0 1.66-4.08c.53-2.67 1-5.19 5.2-5.79zm13.52-15.58c-3.87 4.66-8.57 9.89-12.43 13.87l-.6-.61-2.64-2.68c3.5-3.52 8-7.71 12.19-11.38l1.45-1.26a74.71 74.71 0 0 1 8.72-6.8 74.07 74.07 0 0 1-6.69 8.86z"/></g></g></symbol>
+  <symbol id="icon-book" viewBox="0 0 94 71"><title>&#x420;&#x435;&#x441;&#x443;&#x440;&#x441; 1</title><g id="&#x421;&#x43B;&#x43E;&#x439;_2" data-name="&#x421;&#x43B;&#x43E;&#x439; 2"><g id="&#x421;&#x43B;&#x43E;&#x439;_1-2" data-name="&#x421;&#x43B;&#x43E;&#x439; 1"><path id="book" class="cls-1" d="M14.38 0A3.33 3.33 0 0 0 12 1a3.29 3.29 0 0 0-1 2.36v49.83a3.36 3.36 0 0 0 3.37 3.33c7.83 0 20.95 1.63 30 11v-52.2a3.16 3.16 0 0 0-.46-1.68C36.5 1.81 22.23 0 14.38 0zM83 53.19V3.32A3.29 3.29 0 0 0 82 1a3.34 3.34 0 0 0-2.36-1C71.77 0 57.5 1.82 50.07 13.64a3.16 3.16 0 0 0-.46 1.68V67.5c9-9.36 22.17-11 30-11A3.36 3.36 0 0 0 83 53.19zm7.64-41.69H88.2v41.69a8.56 8.56 0 0 1-8.58 8.49C73 61.69 62 63 54.28 70.23c13.41-3.25 27.55-1.14 35.61.68a3.39 3.39 0 0 0 2.85-.64 3.29 3.29 0 0 0 1.26-2.6V14.82a3.35 3.35 0 0 0-3.36-3.32zM5.8 53.19V11.5H3.36A3.35 3.35 0 0 0 0 14.82v52.85a3.29 3.29 0 0 0 1.26 2.6 3.38 3.38 0 0 0 2.85.64c8.06-1.82 22.2-3.93 35.61-.68C32 63 21 61.69 14.38 61.68a8.56 8.56 0 0 1-8.58-8.49z"/></g></g></symbol>
+  <symbol id="icon-calendar" viewBox="0 0 49 46"><title>&#x420;&#x435;&#x441;&#x443;&#x440;&#x441; 1</title><g id="&#x421;&#x43B;&#x43E;&#x439;_2" data-name="&#x421;&#x43B;&#x43E;&#x439; 2"><g id="&#x421;&#x43B;&#x43E;&#x439;_1-2" data-name="&#x421;&#x43B;&#x43E;&#x439; 1"><path id="Forma_1" data-name="Forma 1" class="cls-1" d="M41.34 3.07h-6.12V1.53a1.53 1.53 0 1 0-3.06 0v1.54H16.84V1.53a1.53 1.53 0 1 0-3.06 0v1.54H7.66A7.58 7.58 0 0 0 0 10.58v27.75A7.59 7.59 0 0 0 7.5 46h33.84A7.59 7.59 0 0 0 49 38.49V10.73a7.58 7.58 0 0 0-7.51-7.66zM3.06 10.73a4.72 4.72 0 0 1 4.6-4.6h6.12v1.54a1.53 1.53 0 1 0 3.06 0V6.13h15.32v1.54a1.53 1.53 0 1 0 3.06 0V6.13h6.12a4.72 4.72 0 0 1 4.6 4.6v4.6H3.06zm42.88 27.6a4.71 4.71 0 0 1-4.6 4.6H7.66a4.71 4.71 0 0 1-4.6-4.6V18.4h42.88v19.93zm-35.22 0a2.74 2.74 0 0 0 2.14-.92 3 3 0 0 0 .1-4.19l-.1-.1A3 3 0 0 0 8.68 33l-.11.11a2.79 2.79 0 0 0-.91 2.15 3.3 3.3 0 0 0 .91 2.14 2.78 2.78 0 0 0 2.15.93zm0-9.2a2.74 2.74 0 0 0 2.14-.92A3 3 0 0 0 13 24l-.1-.1a3 3 0 0 0-4.18-.11l-.11.11a3.07 3.07 0 0 0 2.15 5.21zm9.19 9.2a2.76 2.76 0 0 0 2.14-.92 3 3 0 0 0 .1-4.19l-.1-.1a3 3 0 0 0-4.18-.12l-.11.11a3 3 0 0 0-.1 4.19l.1.1a2.76 2.76 0 0 0 2.15.92zm0-9.2a2.76 2.76 0 0 0 2.14-.92 3 3 0 0 0 .1-4.19l-.1-.1a3 3 0 0 0-4.18-.11l-.11.11a3 3 0 0 0-.1 4.19l.1.1a2.76 2.76 0 0 0 2.15.92zm9.18 9.2a3.14 3.14 0 0 0 3.07-3.06 2.8 2.8 0 0 0-.92-2.15 3 3 0 0 0-4.18-.12l-.11.11a3 3 0 0 0-.1 4.19l.1.1a2.74 2.74 0 0 0 2.14.93zm0-9.2a3.14 3.14 0 0 0 3.07-3.06 3.32 3.32 0 0 0-.92-2.15 3 3 0 0 0-4.18-.11l-.11.11a3 3 0 0 0-.1 4.19l.1.1a2.74 2.74 0 0 0 2.14.92zm9.19 9.2a2.78 2.78 0 0 0 2.15-.92 3 3 0 0 0 .07-4.22l-.07-.07a3 3 0 0 0-4.18-.12l-.11.11a2.8 2.8 0 0 0-.92 2.15 3.31 3.31 0 0 0 .92 2.14 2.74 2.74 0 0 0 2.14.92zm0-9.2a3.13 3.13 0 0 0 3.06-3.06 3.3 3.3 0 0 0-.91-2.15 3 3 0 0 0-4.18-.11l-.11.11a3 3 0 0 0-.1 4.19l.1.1a2.74 2.74 0 0 0 2.14.92z"/></g></g></symbol>
+  <symbol id="icon-clock" viewBox="0 0 75.98 75.98"><title>&#x420;&#x435;&#x441;&#x443;&#x440;&#x441; 1</title><g id="&#x421;&#x43B;&#x43E;&#x439;_2" data-name="&#x421;&#x43B;&#x43E;&#x439; 2"><g id="&#x421;&#x43B;&#x43E;&#x439;_1-2" data-name="&#x421;&#x43B;&#x43E;&#x439; 1"><path id="clock" class="cls-1" d="M38 76a38 38 0 1 1 38-38 38 38 0 0 1-38 38zm0-73.69A35.68 35.68 0 1 0 73.67 38 35.68 35.68 0 0 0 38 2.31zm11 50.18a1.15 1.15 0 0 1-.89-.42l-11-13.34a1.15 1.15 0 0 1-.27-.74V15.83a1.16 1.16 0 1 1 2.31 0v21.75l10.78 13a1.15 1.15 0 0 1-.93 1.91z"/></g></g></symbol>
+  <symbol id="icon-folder" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="icon-house" viewBox="0 0 69.01 72.02"><title>&#x420;&#x435;&#x441;&#x443;&#x440;&#x441; 1</title><g id="&#x421;&#x43B;&#x43E;&#x439;_2" data-name="&#x421;&#x43B;&#x43E;&#x439; 2"><g id="&#x421;&#x43B;&#x43E;&#x439;_1-2" data-name="&#x421;&#x43B;&#x43E;&#x439; 1"><path id="house" class="cls-1" d="M66.76 64.81V32.28a3.09 3.09 0 0 0-3.11-3.07h-14.8v-8.86a2.3 2.3 0 0 0-1.2-2l-12-6.61-.2-.1V7.86h6.46a.93.93 0 0 0 .93-.92V2.27a.93.93 0 0 0-.93-.92h-6.47V.93a.93.93 0 1 0-1.87 0v10.7l-.2.1-12 6.61a2.3 2.3 0 0 0-1.2 2v8.85H5.37a3.09 3.09 0 0 0-3.11 3.07v32.55A3.76 3.76 0 0 0 3.82 72h61.37a3.76 3.76 0 0 0 1.57-7.2zm-12-24.89a1.8 1.8 0 0 1 1.81-1.79h3.4a1.8 1.8 0 0 1 1.81 1.78v3.35a1.8 1.8 0 0 1-1.81 1.79h-3.4a1.8 1.8 0 0 1-1.81-1.78v-3.35zm0 10.76a1.8 1.8 0 0 1 1.81-1.79h3.4a1.8 1.8 0 0 1 1.81 1.78V54a1.8 1.8 0 0 1-1.81 1.79h-3.4A1.8 1.8 0 0 1 54.72 54v-3.32zM43.82 39.92a1.8 1.8 0 0 1 1.81-1.79H49a1.8 1.8 0 0 1 1.81 1.79v3.35A1.8 1.8 0 0 1 49 45.06h-3.4a1.8 1.8 0 0 1-1.81-1.79v-3.35zm0 10.76a1.8 1.8 0 0 1 1.81-1.79H49a1.8 1.8 0 0 1 1.81 1.79V54A1.8 1.8 0 0 1 49 55.82h-3.4A1.8 1.8 0 0 1 43.82 54v-3.32zm-9.31-30.32a5.07 5.07 0 1 1-5.14 5.07 5.07 5.07 0 0 1 5.14-5.07zm-5.15 29.12a1.8 1.8 0 0 1 1.81-1.79h6.67a1.8 1.8 0 0 1 1.81 1.78v14.12a1.76 1.76 0 0 1-.24.89H29.6a1.76 1.76 0 0 1-.24-.89V49.48zm-11.19-9.56A1.8 1.8 0 0 1 20 38.13h3.4a1.8 1.8 0 0 1 1.81 1.79v3.35a1.8 1.8 0 0 1-1.81 1.79H20a1.8 1.8 0 0 1-1.81-1.79zm0 10.76A1.8 1.8 0 0 1 20 48.89h3.4a1.8 1.8 0 0 1 1.81 1.79V54a1.8 1.8 0 0 1-1.81 1.79H20A1.8 1.8 0 0 1 18.17 54zM7.27 39.92a1.8 1.8 0 0 1 1.81-1.79h3.4a1.8 1.8 0 0 1 1.81 1.78v3.35a1.8 1.8 0 0 1-1.81 1.79h-3.4a1.8 1.8 0 0 1-1.81-1.78v-3.35zm0 10.76a1.8 1.8 0 0 1 1.81-1.79h3.4a1.8 1.8 0 0 1 1.81 1.78V54a1.8 1.8 0 0 1-1.81 1.79h-3.4A1.8 1.8 0 0 1 7.27 54v-3.32z"/></g></g></symbol>
+  <symbol id="icon-login" viewBox="0 0 8 8"><path d="M3 0v1h4v5H3v1h5V0H3zm1 2v1H0v1h4v1l2-1.5L4 2z"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></symbol>
+  <symbol id="icon-man" viewBox="0 0 45.98 48.01"><title>&#x420;&#x435;&#x441;&#x443;&#x440;&#x441; 1</title><g id="&#x421;&#x43B;&#x43E;&#x439;_2" data-name="&#x421;&#x43B;&#x43E;&#x439; 2"><g id="&#x421;&#x43B;&#x43E;&#x439;_1-2" data-name="&#x421;&#x43B;&#x43E;&#x439; 1"><path id="Forma_1" data-name="Forma 1" class="cls-1" d="M23 7.32c1.84 0 3.34-2.14 3.34-4a3.34 3.34 0 1 0-6.68 0c-.01 1.86 1.48 4 3.34 4zm-15.34 8.5c1.85 0 3.35-2.14 3.35-4a3.34 3.34 0 0 0-6.69 0c.01 1.86 1.5 4 3.34 4zm3.7 12.52v-9l.37.11 1 8.64A1.32 1.32 0 0 0 14 29.26h.14a1.33 1.33 0 0 0 1.17-1.46l-1.06-9.49a1 1 0 0 0-.06-.18 1.07 1.07 0 0 0-.08-.27 1.61 1.61 0 0 0-.15-.21c-.06-.06-.1-.13-.16-.18a1.41 1.41 0 0 0-.26-.16l-.15-.09a19.86 19.86 0 0 0-5.74-1.14A19.6 19.6 0 0 0 2 17.18h-.13a1.51 1.51 0 0 0-.37.22l-.11.13a1.24 1.24 0 0 0-.19.26 1.12 1.12 0 0 0-.08.26 1.05 1.05 0 0 0-.06.19L0 27.8a1.33 1.33 0 0 0 1.17 1.46h.15a1.32 1.32 0 0 0 1.31-1.17l1-8.64.37-.11v9l-.92 11.07H0v5.12h1.28V48h12.77v-3.47h1.28v-5.12h-3.07zM7.66 30a1.58 1.58 0 0 0 .65-.14l.77 9.57H6.25L7 29.84a1.49 1.49 0 0 0 .66.16zm30.65-16.31c1.85 0 3.34-2.14 3.34-4a3.34 3.34 0 1 0-6.68 0c0 1.84 1.5 4 3.34 4zm-7.66 17.23h-3.07l-.89-11.08V12.2a1.25 1.25 0 0 0 .53.13 1.34 1.34 0 0 0 1.1-.59l6.34-9.49a1.32 1.32 0 1 0-2.2-1.46l-5.07 7.58A15.11 15.11 0 0 0 23 7.59a15.38 15.38 0 0 0-4.4.78L13.52.79a1.33 1.33 0 0 0-1.83-.36 1.31 1.31 0 0 0-.37 1.81l6.34 9.49a1.34 1.34 0 0 0 1.1.59 1.25 1.25 0 0 0 .53-.13v7.64l-.89 11.09h-3.07V36h1.27v12h12.78V36h1.27v-5.08zM23 21.48a1.53 1.53 0 0 0 .64-.14l.77 9.58h-2.83l.77-9.58a1.54 1.54 0 0 0 .65.14zm19.91 15.81L42 26.21v-9l.37.1 1 8.65a1.33 1.33 0 0 0 1.31 1.17h.15A1.32 1.32 0 0 0 46 25.68l-1.06-9.5a1.26 1.26 0 0 0-.06-.18 1.38 1.38 0 0 0-.08-.27c0-.07-.1-.13-.15-.2a1.46 1.46 0 0 0-.16-.19 1.34 1.34 0 0 0-.26-.15c-.06 0-.1-.07-.15-.1A20.37 20.37 0 0 0 38.31 14a19.6 19.6 0 0 0-5.63 1.1h-.13a1.16 1.16 0 0 0-.37.23l-.11.12a1.65 1.65 0 0 0-.19.27 1 1 0 0 0-.08.25 1.05 1.05 0 0 0-.06.19l-1.06 9.5a1.31 1.31 0 0 0 1.16 1.45H32A1.33 1.33 0 0 0 33.29 26l1-8.64.37-.1v9l-.9 11.08h-3.11v5.12h1.28V48H44.7v-5.6H46v-5.11h-3.09zm-4.6-9.43a1.58 1.58 0 0 0 .65-.14l.77 9.57H36.9l.77-9.57a1.57 1.57 0 0 0 .64.14z"/></g></g></symbol>
+  <symbol id="icon-multimedia" viewBox="0 0 48 48"><title>&#x420;&#x435;&#x441;&#x443;&#x440;&#x441; 1</title><g id="&#x421;&#x43B;&#x43E;&#x439;_2" data-name="&#x421;&#x43B;&#x43E;&#x439; 2"><g id="&#x421;&#x43B;&#x43E;&#x439;_1-2" data-name="&#x421;&#x43B;&#x43E;&#x439; 1"><path id="Forma_1" data-name="Forma 1" class="cls-1" d="M19.13 22.58a.9.9 0 0 0 .9 0l9.78-6.11a.86.86 0 0 0 0-1.47L20 8.86a.91.91 0 0 0-.91 0 .87.87 0 0 0-.46.77v12.19a.87.87 0 0 0 .5.76zm1.32-11.39l7.23 4.52-7.23 4.52v-9zM0 0v48h48V0zm46.22 1.75v28.8H1.78V1.75zM1.78 46.25v-14h44.44v14zm40-7.85H20.44v-1.75a.89.89 0 0 0-1.78 0v1.75h-3.55a.87.87 0 0 0-.06 1.74h3.62v1.74a.89.89 0 0 0 1.78 0v-1.73h21.33a.87.87 0 0 0 .06-1.74h-.06zM6.22 35.78a.88.88 0 0 0-.89.87v5.24a.89.89 0 0 0 1.78 0v-5.24a.88.88 0 0 0-.89-.87zm3.56 0a.88.88 0 0 0-.89.87v5.24a.89.89 0 0 0 1.78 0v-5.24a.88.88 0 0 0-.89-.87z"/></g></g></symbol>
+  <symbol id="icon-newspaper" viewBox="0 0 32 32"><g fill="#e6aa3c"><path d="M28 7V3H0v22s0 4 4 4h25s3-.062 3-4V7h-4zM4 27c-2 0-2-2-2-2V5h24v20c0 .921.284 1.559.676 2H4z"/><path d="M4 9h20v2H4zm11 12h7v2h-7zm0-4h9v2h-9zm0-4h9v2h-9zM4 13h9v10H4z"/></g></symbol>
+  <symbol id="icon-phone" viewBox="0 0 578.106 578.106"><path d="M577.83 456.128c1.225 9.385-1.635 17.545-8.568 24.48l-81.396 80.781c-3.672 4.08-8.465 7.551-14.381 10.404-5.916 2.857-11.729 4.693-17.439 5.508-.408 0-1.635.105-3.676.309-2.037.203-4.689.307-7.953.307-7.754 0-20.301-1.326-37.641-3.979s-38.555-9.182-63.645-19.584c-25.096-10.404-53.553-26.012-85.376-46.818-31.823-20.805-65.688-49.367-101.592-85.68-28.56-28.152-52.224-55.08-70.992-80.783-18.768-25.705-33.864-49.471-45.288-71.299-11.425-21.828-19.993-41.616-25.705-59.364S4.59 177.362 2.55 164.51-.306 141.56.102 134.216c.408-7.344.612-11.424.612-12.24.816-5.712 2.652-11.526 5.508-17.442s6.324-10.71 10.404-14.382L98.022 8.756c5.712-5.712 12.24-8.568 19.584-8.568 5.304 0 9.996 1.53 14.076 4.59s7.548 6.834 10.404 11.322l65.484 124.236c3.672 6.528 4.692 13.668 3.06 21.42-1.632 7.752-5.1 14.28-10.404 19.584l-29.988 29.988c-.816.816-1.53 2.142-2.142 3.978s-.918 3.366-.918 4.59c1.632 8.568 5.304 18.36 11.016 29.376 4.896 9.792 12.444 21.726 22.644 35.802s24.684 30.293 43.452 48.653c18.36 18.77 34.68 33.354 48.96 43.76 14.277 10.4 26.215 18.053 35.803 22.949 9.588 4.896 16.932 7.854 22.031 8.871l7.648 1.531c.816 0 2.145-.307 3.979-.918 1.836-.613 3.162-1.326 3.979-2.143l34.883-35.496c7.348-6.527 15.912-9.791 25.705-9.791 6.938 0 12.443 1.223 16.523 3.672h.611l118.115 69.768c8.571 5.308 13.67 12.038 15.303 20.198z" fill="#FFFFFF"/></symbol>
+  <symbol id="icon-search" viewBox="0 0 8 8"><path d="M3.5 0C1.57 0 0 1.57 0 3.5S1.57 7 3.5 7c.59 0 1.17-.14 1.66-.41a1 1 0 0 0 .13.13l1 1a1.02 1.02 0 1 0 1.44-1.44l-1-1a1 1 0 0 0-.16-.13c.27-.49.44-1.06.44-1.66 0-1.93-1.57-3.5-3.5-3.5zm0 1C4.89 1 6 2.11 6 3.5c0 .66-.24 1.27-.66 1.72l-.03.03a1 1 0 0 0-.13.13c-.44.4-1.04.63-1.69.63-1.39 0-2.5-1.11-2.5-2.5s1.11-2.5 2.5-2.5z"/></symbol>
+  <symbol id="icon-teacher" viewBox="0 0 47 48"><title>&#x420;&#x435;&#x441;&#x443;&#x440;&#x441; 1</title><g id="&#x421;&#x43B;&#x43E;&#x439;_2" data-name="&#x421;&#x43B;&#x43E;&#x439; 2"><g id="&#x421;&#x43B;&#x43E;&#x439;_1-2" data-name="&#x421;&#x43B;&#x43E;&#x439; 1"><path id="Forma_1" data-name="Forma 1" class="cls-1" d="M.73 14.09a6.33 6.33 0 1 1 6.33 6.32 6.32 6.32 0 0 1-6.33-6.32zm28 5.92a2.13 2.13 0 0 0-2.93.69l-4.23 6.92-5.95-3.32c-2.67-1.65-4-2.43-7.95-2.43H6.46C-1.25 22.79.09 29 .09 29L1 48l13.56-.15L14 29l7.23 3.43a2.08 2.08 0 0 0 1 .28 2.16 2.16 0 0 0 1.84-1L29.45 23a2.13 2.13 0 0 0-.71-3zm-17.13-.66a7.22 7.22 0 0 1-1.54 1v1a9.61 9.61 0 0 1 1.54.28zM47 0H10.06v7.81a6.87 6.87 0 0 1 1.54 1V1.54h33.86V24.7h-16.3l-.94 1.54H47zM21.65 26.24l.94-1.54h-4.93l2.75 1.54h1.24zM34.7 10.63l-.7-.43-5.18 9 .75.43z"/></g></g></symbol>
+  <symbol id="icon-user" viewBox="0 0 8 8"><path d="M4 0C2.9 0 2 1.12 2 2.5S2.9 5 4 5s2-1.12 2-2.5S5.1 0 4 0zM1.91 5C.85 5.05 0 5.92 0 7v1h8V7c0-1.08-.84-1.95-1.91-2-.54.61-1.28 1-2.09 1-.81 0-1.55-.39-2.09-1z"/></symbol>
+  <symbol id="icon-facebook" viewBox="0 0 430.113 430.114"><path d="M158.081 83.3v59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805s5.601-34.721 8.316-72.685H247.54V92.74c0-7.4 9.717-17.354 19.321-17.354h48.557V.001h-66.021C155.878-.004 158.081 72.48 158.081 83.3z" fill="#00a4d3"/></symbol>
+  <symbol id="icon-google" viewBox="0 0 90 90"><path d="M74.499 0H50.144c-6.382 0-14.421.942-21.158 6.49-5.09 4.374-7.566 10.392-7.566 15.828 0 9.211 7.094 18.546 19.625 18.546 1.182 0 2.477-.12 3.787-.235-.592 1.413-1.189 2.594-1.189 4.605 0 3.662 1.893 5.902 3.547 8.029-5.314.353-15.249.942-22.583 5.428-6.975 4.143-9.107 10.16-9.107 14.414C15.499 81.846 23.778 90 40.923 90c20.336 0 31.098-11.22 31.098-22.33 0-8.143-4.729-12.164-9.932-16.534l-4.258-3.305c-1.295-1.065-3.068-2.479-3.068-5.08 0-2.597 1.773-4.254 3.307-5.789 4.964-3.896 9.933-8.03 9.933-16.77 0-8.979-5.68-13.704-8.396-15.947h7.334L74.499 0zM64.103 72.279c0 7.322-6.033 12.753-17.385 12.753-12.648 0-20.809-6.024-20.809-14.405 0-8.393 7.568-11.218 10.166-12.164 4.969-1.656 11.352-1.891 12.414-1.891 1.184 0 1.775 0 2.725.115 8.988 6.377 12.889 9.57 12.889 15.592zm-9.461-38.03c-1.893 1.886-5.088 3.305-8.045 3.305-10.164 0-14.772-13.113-14.772-21.023 0-3.072.592-6.258 2.598-8.74 1.893-2.362 5.201-3.899 8.277-3.899 9.812 0 14.899 13.229 14.899 21.73 0 2.13-.241 5.906-2.957 8.627z" fill="#00a4d3"/></symbol>
+  <symbol id="icon-linkedin" viewBox="0 0 430.117 430.117"><path d="M430.117 261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707-25.473 0-40.632 17.142-47.301 33.724-2.432 5.928-3.058 14.179-3.058 22.477V420.56h-92.219s1.242-251.285 0-277.32h92.21v39.309c-.187.294-.43.611-.606.896h.606v-.896c12.251-18.869 34.13-45.824 83.102-45.824 60.673-.001 106.157 39.636 106.157 124.818zM52.183 9.558C20.635 9.558 0 30.251 0 57.463c0 26.619 20.038 47.94 50.959 47.94h.616c32.159 0 52.159-21.317 52.159-47.94-.606-27.212-20-47.905-51.551-47.905zM5.477 420.56h92.184V143.24H5.477v277.32z" fill="#00a4d3"/></symbol>
+  <symbol id="icon-twitter" viewBox="0 0 430.117 430.117"><path d="M381.384 198.639c24.157-1.993 40.543-12.975 46.849-27.876-8.714 5.353-35.764 11.189-50.703 5.631-.732-3.51-1.55-6.844-2.353-9.854-11.383-41.798-50.357-75.472-91.194-71.404a173.448 173.448 0 0 1 9.996-3.691c4.495-1.61 30.868-5.901 26.715-15.21-3.5-8.188-35.722 6.188-41.789 8.067 8.009-3.012 21.254-8.193 22.673-17.396-12.27 1.683-24.315 7.484-33.622 15.919 3.36-3.617 5.909-8.025 6.45-12.769C241.68 90.963 222.563 133.113 207.092 174c-12.148-11.773-22.915-21.044-32.574-26.192-27.097-14.531-59.496-29.692-110.355-48.572-1.561 16.827 8.322 39.201 36.8 54.08-6.17-.826-17.453 1.017-26.477 3.178 3.675 19.277 15.677 35.159 48.169 42.839-14.849.98-22.523 4.359-29.478 11.642 6.763 13.407 23.266 29.186 52.953 25.947-33.006 14.226-13.458 40.571 13.399 36.642C113.713 320.887 41.479 317.409 0 277.828c108.299 147.572 343.716 87.274 378.799-54.866 26.285.224 41.737-9.105 51.318-19.39-15.144 2.57-37.094-.086-48.733-4.933z" fill="#00a4d3"/></symbol>
+  <symbol id="icon-youtube" viewBox="0 0 90 90"><path d="M90 26.958C90 19.525 83.979 13.5 76.55 13.5h-63.1C6.021 13.5 0 19.525 0 26.958v36.084C0 70.475 6.021 76.5 13.45 76.5h63.1C83.979 76.5 90 70.475 90 63.042V26.958zM36 60.225V26.33l25.702 16.947L36 60.225z" fill="#00a4d3"/></symbol>
+</svg>
+  <header class="page-header">
+    <div class="page-header__container">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__logo">
+          <a href="index.html" class="main-nav__link main-nav__link--home">
+            <picture>
+              <img class="main-nav__logotype" src="img/main-nav__logo.png" srcset="img/main-nav__logo@2x.png 2x" alt="KidzMaster" title="KidzMaster" width="271" height="140">
+            </picture>
+          </a>
+        </div>
+        <button class="main-nav__toggler">Открыть меню</button>
+        <div class="main-nav__container">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__info">
+            <li class="main-nav__item">
+              <a href="tel:+18006333439" class="main-nav__link main-nav__link--phone">1-800-633-3469
+                <svg class="main-nav__icon-phone" width="24" height="24">
+                  <use x="0" y="0" xlink:href="#icon-phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="mailto:mailedukado.com" class="main-nav__link main-nav__link--mail">mailedukado.com
+                <svg class="main-nav__icon-mail" width="24" height="24">
+                  <use x="0" y="0" xlink:href="#icon-mail"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-block">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link main-nav__link--search">Search
+                <svg class="main-nav__icon-search" width="24" height="24">
+                  <use x="0" y="0" xlink:href="#icon-search"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link main-nav__link--reg">Register
+                <svg class="main-nav__icon-reg" width="24" height="24">
+                  <use x="0" y="0" xlink:href="#icon-user"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--border-bottom">
+              <a href="#" class="main-nav__link main-nav__link--login">Sign In
+                <svg class="main-nav__icon-login" width="24" height="24">
+                  <use x="0" y="0" xlink:href="#icon-login"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Academic</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Admission</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Teachers</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">About</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Blog</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Contact</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content">
+      <section class="slider">
+        <div class="slider__container">
+        <input class="slider__control" type="radio" name="slider" id="slide-1" checked>
+        <input class="slider__control" type="radio" name="slider" id="slide-2">
+        <input class="slider__control" type="radio" name="slider" id="slide-3">
+        <div class="slider__controls">
+          <label class="slider__label" for="slide-1"></label>
+          <label class="slider__label" for="slide-2"></label>
+          <label class="slider__label" for="slide-3"></label>
+        </div>
+        <div class="slider__page slider__page--first">
+          <div class="slider__images">
+            <img src="img/slide-1.png" alt="Child" class="slider__image" width="769" height="663">
+          </div>
+          <div class="slider__description">
+            <h1 class="slider__heading">Play. Learn. Grow</h1>
+            <p class="slider__text">Your Neighborhood Prescool</p>
+            <a href="#" class="slider__btn btn">Admission now</a>
+          </div>
+        </div>
+        <div class="slider__page slider__page--second">
+          <div class="slider__images">
+            <img src="img/slide-1.png" alt="Child" class="slider__image" width="769" height="663">
+          </div>
+          <div class="slider__description">
+            <h1 class="slider__heading">Lorem ipsum dolor</h1>
+            <p class="slider__text">Lorem ipsum dolor</p>
+            <a href="#" class="slider__btn btn">Lorem</a>
+          </div>
+        </div>
+        <div class="slider__page slider__page--third">
+          <div class="slider__images">
+            <img src="img/slide-1.png" alt="Child" class="slider__image" width="769" height="663">
+          </div>
+          <div class="slider__description">
+            <h1 class="slider__heading">Lorem ipsum dolor</h1>
+            <p class="slider__text">Lorem ipsum dolor</p>
+            <a href="#" class="slider__btn btn">Lorem</a>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="intro">
+        <div class="intro__container">
+          <span class="intro__subtitle">Welcome to</span>
+          <h2 class="intro__title">Kidz Master</h2>
+          <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et.dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="intro__subtext">Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.</p>
+          <a href="#" class="btn intro__btn">Read more</a>
+        </div>
+      </section>
+      <section class="courses">
+        <div class="courses__container">
+          <h2 class="courses__title">Our features courses</h2>
+          <p class="courses__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing aelit, sed do eiusmod tempor incididunt.</p>
+          <div class="courses__list">
+            <div class="courses__item">
+              <div class="courses__image courses__image--first"></div>
+              <div class="courses__description">
+                <span class="courses__number">Class one
+                  <svg class="courses__icon-folder" width="24" height="24">
+                  <use x="0" y="0" xlink:href="#icon-folder"></use>
+                </svg>
+                </span>
+                <h3 class="courses__class">English class</h3>
+                <p class="courses__text">Lorem ipsum dolor sit amet, consectetur adipiscing aelit, sed do eiusmod tempor incididunt.</p>
+                <a href="#" class="btn courses__btn">Apply now</a>
+              </div>
+            </div>
+            <div class="courses__item">
+              <div class="courses__image courses__image--second"></div>
+              <div class="courses__description">
+                <span class="courses__number">Class one
+                  <svg class="courses__icon-folder" width="24" height="24">
+                  <use x="0" y="0" xlink:href="#icon-folder"></use>
+                </svg>
+                </span>
+                <h3 class="courses__class">Math class</h3>
+                <p class="courses__text">Lorem ipsum dolor sit amet, consectetur adipiscing aelit, sed do eiusmod tempor incididunt.</p>
+                <a href="#" class="btn courses__btn">Apply now</a>
+              </div>
+            </div>
+            <div class="courses__item">
+              <div class="courses__image courses__image--third"></div>
+              <div class="courses__description">
+                <span class="courses__number">Class two
+                  <svg class="courses__icon-folder" width="24" height="24">
+                  <use x="0" y="0" xlink:href="#icon-folder"></use>
+                </svg>
+                </span>
+                <h3 class="courses__class">Painting class</h3>
+                <p class="courses__text">Lorem ipsum dolor sit amet, consectetur adipiscing aelit, sed do eiusmod tempor incididunt.</p>
+                <a href="#" class="btn courses__btn">Apply now</a>
+              </div>
+            </div>
+            <div class="courses__item">
+              <div class="courses__image courses__image--fourth"></div>
+              <div class="courses__description">
+                <span class="courses__number">Primary
+                  <svg class="courses__icon-folder" width="24" height="24">
+                  <use x="0" y="0" xlink:href="#icon-folder"></use>
+                </svg>
+                </span>
+                <h3 class="courses__class">Technology</h3>
+                <p class="courses__text">Lorem ipsum dolor sit amet, consectetur adipiscing aelit, sed do eiusmod tempor incididunt.</p>
+                <a href="#" class="btn courses__btn">Apply now</a>
+              </div>
+            </div>
+            <a href="#" class="btn courses__button">View all courses</a>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__container">
+          <div class="features__heading">
+            <h3 class="features__title">School Facilities</h3>
+            <p class="features__text">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcoolor sit amet</p>
+          </div>
+          <ul class="features__list">
+            <li class="features__item">
+              <a href="#" class="features__link features__link--first">Healthy meals
+                <svg class="features__icon-apple" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-apple"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="features__item">
+              <a href="#" class="features__link features__link--second">Multimedia Class
+                <svg class="features__icon-multimedia" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-multimedia"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="features__item">
+              <a href="#" class="features__link features__link--third">Art Class
+                <svg class="features__icon-art" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-art"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="features__item">
+              <a href="#" class="features__link features__link--fourth">Events
+                <svg class="features__icon-calendar" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-calendar"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="features__item">
+              <a href="#" class="features__link features__link--fifth">Teachers
+                <svg class="features__icon-teacher" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-teacher"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="features__item">
+              <a href="#" class="features__link features__link--sixth">Achievements
+                <svg class="features__icon-man" width="50" height="50">
+                  <use x="0" y="0" xlink:href="#icon-man"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="teachers">
+        <div class="teachers__container">
+          <div class="teachers__heading">
+            <h3 class="teachers__title">Meet our teachers</h3>
+            <p class="teachers__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing aelit, sed do eiusmod tempor incididunt.</p>
+          </div>
+          <div class="teachers__list">
+            <div class="teachers__item">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-1.jpg" srcset="img/teacher-1@2x.jpg 2x" alt="Martina Doe" width="333" height="333">
+              </picture>
+              <div class="teachers__description">
+                <span class="teachers__name">Martina Doe</span>
+                <span class="teachers__post">(Principle)</span>
+              </div>
+            </div>
+            <div class="teachers__item">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-2.jpg" srcset="img/teacher-2@2x.jpg 2x" alt="Jogn Doe" width="333" height="333">
+              </picture>
+              <div class="teachers__description">
+                <span class="teachers__name">John Doe</span>
+                <span class="teachers__post">(Vice-principle)</span>
+              </div>
+            </div>
+            <div class="teachers__item">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-3.jpg" srcset="img/teacher-3@2x.jpg 2x" alt="Luis Alexa" width="333" height="333">
+              </picture>
+              <div class="teachers__description">
+                <span class="teachers__name">Luis Alexa</span>
+                <span class="teachers__post">(Dance teacher)</span>
+              </div>
+            </div>
+            <div class="teachers__item">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-4.jpg" srcset="img/teacher-4@2x.jpg 2x" alt="David Vettori" width="333" height="333">
+              </picture>
+              <div class="teachers__description">
+                <span class="teachers__name">David Vettori</span>
+                <span class="teachers__post">(Art teacher)</span>
+              </div>
+            </div>
+            <div class="teachers__item">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-5.jpg" srcset="img/teacher-5@2x.jpg 2x" alt="David Lui" width="333" height="333">
+              </picture>
+              <div class="teachers__description">
+                <span class="teachers__name">David Lui</span>
+                <span class="teachers__post">(Math teacher)</span>
+              </div>
+            </div>
+            <div class="teachers__item">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-6.jpg" srcset="img/teacher-6@2x.jpg 2x" alt="Bonnie Odd" width="333" height="333">
+              </picture>
+              <div class="teachers__description">
+                <span class="teachers__name">Bonnie Odd</span>
+                <span class="teachers__post">(Painting teacher)</span>
+              </div>
+            </div>
+            <div class="teachers__item">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-7.jpg" srcset="img/teacher-7@2x.jpg 2x" alt="John Hassi" width="333" height="333">
+              </picture>
+              <div class="teachers__description">
+                <span class="teachers__name">John Hassi</span>
+                <span class="teachers__post">(Language teacher)</span>
+              </div>
+            </div>
+            <div class="teachers__item">
+              <picture>
+                <img class="teachers__photo" src="img/teacher-8.jpg" srcset="img/teacher-8@2x.jpg 2x" alt="John Alena" width="333" height="333">
+              </picture>
+              <div class="teachers__description">
+                <span class="teachers__name">John Alena</span>
+                <span class="teachers__post">(Music teacher)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__container">
+        <input class="reviews__control" type="radio" id="reviews__slide1" name="reviews" checked>
+        <input class="reviews__control" type="radio" id="reviews__slide2" name="reviews">
+        <input class="reviews__control" type="radio" id="reviews__slide3" name="reviews">
+        <div class="reviews__controls">
+          <label class="reviews__label" for="reviews__slide1"></label>
+          <label class="reviews__label" for="reviews__slide2"></label>
+          <label class="reviews__label" for="reviews__slide3"></label>
+        </div>
+        <blockquote class="reviews__page reviews__page--first">
+          <picture class="reviews__picture">
+            <img class="reviews__photo" src="img/slide1.jpg" srcset="img/slide1@2x.jpg 2x" alt="#" width="150" height="523">
+          </picture>
+          <cite class="reviews__author">Mickel John</cite>
+          <p class="reviews__text">Lorem ipsum dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcoolor sit amet, </p>
+        </blockquote>
+          <blockquote class="reviews__page reviews__page--second">
+            <picture class="reviews__picture">
+              <img class="reviews__photo" src="img/slide1.jpg" srcset="img/slide1@2x.jpg 2x" alt="#" width="150" height="523">
+            </picture>
+            <cite class="reviews__author">Mickel John</cite>
+            <p class="reviews__text">Lorem ipsum dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcoolor sit amet, </p>
+          </blockquote>
+          <blockquote class="reviews__page reviews__page--third">
+            <picture class="reviews__picture">
+              <img class="reviews__photo" src="img/slide1.jpg" srcset="img/slide1@2x.jpg 2x" alt="#" width="150" height="523">
+            </picture>
+            <cite class="reviews__author">Mickel John</cite>
+            <p class="reviews__text">Lorem ipsum dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcoolor sit amet, </p>
+          </blockquote>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news__container">
+          <h3 class="news__title">From notice board</h3>
+            <input class="news__control" type="radio" id="news__slide1" name="news" checked>
+            <input class="news__control" type="radio" id="news__slide2" name="news">
+            <input class="news__control" type="radio" id="news__slide3" name="news">
+            <div class="news__controls">
+              <label class="news__label" for="news__slide1">Latest news</label>
+              <label class="news__label" for="news__slide2">Bulletin</label>
+              <label class="news__label" for="news__slide3">Media</label>
+            </div>
+          <div class="news__page news__page--first">
+            <div class="news__item">
+              <picture>
+                <img class="news__photo" src="img/news-1.jpg" srcset="img/news-1@2x.jpg 2x" alt="#" width="655" height="437">
+              </picture>
+              <time class="news__date" datetime="2017-02-25">February 25, 2017</time>
+              <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
+            </div>
+            <div class="news__item">
+              <picture>
+                <img class="news__photo" src="img/news-2.jpg" srcset="img/news-2@2x.jpg 2x" alt="#" width="655" height="437">
+              </picture>
+              <time class="news__date" datetime="2017-02-20">February 20, 2017</time>
+              <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
+            </div>
+            <div class="news__item">
+              <picture>
+                <img class="news__photo" src="img/news-3.jpg" srcset="img/news-3@2x.jpg 2x" alt="#" width="658" height="433">
+              </picture>
+              <time class="news__date" datetime="2017-02-19">February 19, 2017</time>
+              <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
+            </div>
+          </div>
+          <div class="news__page news__page--second">
+            <div class="news__item">
+              <picture>
+                <img class="news__photo" src="img/news-1.jpg" srcset="img/news-1@2x.jpg 2x" alt="#" width="655" height="437">
+              </picture>
+              <time class="news__date" datetime="2017-02-25">February 25, 2017</time>
+              <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
+            </div>
+            <div class="news__item">
+              <picture>
+                <img class="news__photo" src="img/news-2.jpg" srcset="img/news-2@2x.jpg 2x" alt="#" width="655" height="437">
+              </picture>
+              <time class="news__date" datetime="2017-02-20">February 20, 2017</time>
+              <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
+            </div>
+            <div class="news__item">
+              <picture>
+                <img class="news__photo" src="img/news-3.jpg" srcset="img/news-3@2x.jpg 2x" alt="#" width="658" height="433">
+              </picture>
+              <time class="news__date" datetime="2017-02-19">February 19, 2017</time>
+              <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
+            </div>
+          </div>
+          <div class="news__page news__page--third">
+            <div class="news__item">
+              <picture>
+                <img class="news__photo" src="img/news-1.jpg" srcset="img/news-1@2x.jpg 2x" alt="#" width="655" height="437">
+              </picture>
+              <time class="news__date" datetime="2017-02-25">February 25, 2017</time>
+              <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
+            </div>
+            <div class="news__item">
+              <picture>
+                <img class="news__photo" src="img/news-2.jpg" srcset="img/news-2@2x.jpg 2x" alt="#" width="655" height="437">
+              </picture>
+              <time class="news__date" datetime="2017-02-20">February 20, 2017</time>
+              <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
+            </div>
+            <div class="news__item">
+              <picture>
+                <img class="news__photo" src="img/news-3.jpg" srcset="img/news-3@2x.jpg 2x" alt="#" width="658" height="433">
+              </picture>
+              <time class="news__date" datetime="2017-02-19">February 19, 2017</time>
+              <p class="news__text">A Diploma of Accounting is specifically designed for those individuals</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <ul class="info__list">
+          <li class="info__item info__item--first">
+            <svg class="info__icon-house" width="48" height="48">
+              <use x="0" y="0" xlink:href="#icon-house"></use>
+            </svg>
+            <a href="#" class="info__link">Kidz master addres</a>
+            <p class="info__text">
+              73724 Route, 4A
+              South Richmond Hill, NY 11419
+            </p>
+          </li>
+          <li class="info__item info__item--second">
+            <svg class="info__icon-newspaper" width="48" height="48">
+              <use x="0" y="0" xlink:href="#icon-newspaper"></use>
+            </svg>
+            <a href="#" class="info__link">Notice boards</a>
+            <p class="info__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </li>
+          <li class="info__item info__item--third">
+            <svg class="info__icon-clock" width="48" height="48">
+              <use x="0" y="0" xlink:href="#icon-clock"></use>
+            </svg>
+            <a href="#" class="info__link">Office hour</a>
+            <p class="info__text">
+              Monday-Friday
+              9:00am-5:00pm
+            </p>
+          </li>
+          <li class="info__item info__item--fourth">
+            <svg class="info__icon-book" width="48" height="48">
+              <use x="0" y="0" xlink:href="#icon-book"></use>
+            </svg>
+            <a href="#" class="info__link">Admission now</a>
+            <p class="info__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </li>
+        </ul>
+      </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <section class="page-footer__block page-footer__block--top">
+        <div class="page-footer__links">
+          <a href="#" class="page-footer__link">Sign up <br> For our newssletter</a>
+        </div>
+        <form action="#" class="page-footer__form">
+          <input class="page-footer__input" type="email" title="Email" placeholder="Enter your email">
+          <button class="btn page-footer__btn" type="submit">Submit now</button>
+        </form>
+      </section>
+      <section class="page-footer__block page-footer__block--middle">
+        <div class="page-footer__info">
+          <a href="#" class="page-footer__link">Adress:</a>
+          <p class="page-footer__text page-footer__text--address">73724 Route , 4A
+            South Richmond Hill, NY 11419</p>
+          <a href="#" class="page-footer__link">tel:
+            <span class="page-footer__sublink">(603)-677-3400</span>
+          </a>
+          <a href="#" class="page-footer__link">email:
+            <span class="page-footer__sublink">info@yourdomain.com</span>
+          </a>
+          <a href="#" class="page-footer__link">web:
+            <span class="page-footer__sublink">yourdomain.com</span>
+          </a>
+        </div>
+        <div class="page-footer__quicklinks">
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Calender</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Maps & Directions</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Our news</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">University courses</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__insta-block">
+          <a href="#" class="page-footer__link page-footer__link--center">instagram</a>
+          <div class="page-footer__insta-item"></div>
+          <div class="page-footer__insta-item"></div>
+          <div class="page-footer__insta-item"></div>
+          <div class="page-footer__insta-item"></div>
+        </div>
+      </section>
+      <section class="page-footer__block page-footer__block--bottom">
+        <div class="page-footer__copyright">Copyright © 2017 Kidz master. All Rights Reserved</div>
+        <div class="page-footer__logo">
+          <img src="img/logo.png" alt="#" class="page-footer__logotype">
+        </div>
+        <div class="page-footer__social-links">
+          <a href="#" class="page-footer__social-link page-footer__social-link--fb">
+            <svg class="page-footer__icon-facebook" width="35" height="35">
+              <use x="0" y="0" xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#" class="page-footer__social-link page-footer__social-link--tw">
+            <svg class="page-footer__icon-twitter" width="35" height="35">
+              <use x="0" y="0" xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+          <a href="#" class="page-footer__social-link page-footer__social-link--google">
+            <svg class="page-footer__icon-google" width="35" height="35">
+              <use x="0" y="0" xlink:href="#icon-google"></use>
+            </svg>
+          </a>
+          <a href="#" class="page-footer__social-link page-footer__social-link--linkedin">
+            <svg class="page-footer__icon-linkedin" width="35" height="35">
+              <use x="0" y="0" xlink:href="#icon-linkedin"></use>
+            </svg>
+          </a>
+          <a href="#" class="page-footer__social-link page-footer__social-link--yt">
+            <svg class="page-footer__icon-youtube" width="35" height="35">
+              <use x="0" y="0" xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
