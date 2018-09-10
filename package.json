@@ -8,7 +8,7 @@
         "type": "git",
         "url": "git@github.com:webistomin/kidzmaster-adaptive.git"
     },
-    "homepage": "https://github.com/webistomin/mishka-adaptive",
+    "homepage": "https://github.com/webistomin/kidzmaster-adaptive",
     "devDependencies": {
         "@htmlacademy/editorconfig-cli": "1.0.0",
         "autoprefixer": "7.1.2",
